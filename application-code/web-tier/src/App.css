@@ -1,0 +1,48 @@
+/* Variables */
+:root {
+  --primary-color: #282c34;
+  --accent-color: #61dafb;
+}
+
+/* Global styles */
+.App {
+  text-align: center;
+}
+
+/* Header */
+.App-header {
+  background-color: var(--primary-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Logo */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+
+  /* Animation */
+  @media (prefers-reduced-motion: no-preference) {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Link */
+.App-link {
+  color: var(--accent-color);
+}
+
+/* Logo Animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

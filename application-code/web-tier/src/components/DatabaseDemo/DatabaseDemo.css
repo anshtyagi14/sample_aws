@@ -1,0 +1,54 @@
+/* General styles for the table */
+#transactions {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Styles for table cells (td) and header cells (th) */
+#transactions td, #transactions th {
+  border: 1px solid rgb(9, 81, 187);
+  color: white;
+  padding: 8px;
+}
+
+/* Styles for the table title */
+#title {
+  color: white;
+}
+
+/* Styles for the column headers */
+#colHeader td {
+  color: rgb(9, 81, 187);
+}
+
+/* Alternating row background colors */
+#transactions tr:nth-child(even) {
+  background-color: #0A0128;
+} 
+
+/* Hover effect for rows */
+#transactions tr:hover {
+  background-color: #221f2d;
+}
+
+/* Styles for the table header (th) */
+#transactions th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+}
+
+/* Make the table header and body scrollable separately */
+thead,
+tbody {
+  display: block;
+}
+
+/* Set the height and enable overflow for the table body to make it scrollable */
+tbody {
+  height: 500px;
+  overflow: auto;
+}
